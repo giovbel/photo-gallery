@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: rgb(219, 219, 241);
+  }
+  .titulo{
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: 'Changa One', cursive;
+  }
+p{
+  margin-right: 5px;
+}
+.galeria{
+  color: rgb(90, 79, 184);
+}
+.subtitulo{
+    text-align: center;
+}
+main{
+  margin-top: 10px;
+}
+.girlblue{
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  height: 3em;
+}
+.imgs{
+    grid-area: side;
+    height:100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+}
+.embaixo{
+    justify-content: center;
+    display: flex; 
+}
+.girlblue img{
+    height: 310px;
+    }
+.girlblue p{
+  padding: 5px;
+  height: 40px;
+  top: 400px;
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0,0.50);
+}
+.imgs img{
+      height: 150px;
+    }
+.embaixo img{
+    margin-left: 4px;
+    height:68px;
+    display: flex;
+    gap: 30px;
+    margin-top: 270px;
+}
+footer{
+  margin-top: 20px;
+  text-align: center;
+}
+.button{
+  border-radius: 10px;
+  padding: 8px;
+  color: white;
+  background-color: rgb(90, 79, 184);
+}
+.imgs img:hover{
+  transform: scale(1.2);
+  box-shadow: 4px -4px rgb(64, 64, 133);
+}
+.embaixo img:hover{
+  transform: scale(1.2);
+  box-shadow: 4px -4px rgb(64, 64, 133);
+}
+img:hover{
+  cursor: zoom-in;
+}
+.linha{
+  top: 80px;
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 30px;
+}
