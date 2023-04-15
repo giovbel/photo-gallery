@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color:  rgb(219, 219, 241);
+  background-color:  #F8D1D3;
 
 }
 a{
@@ -17,23 +17,25 @@ body{
   padding-right: 290px;
 }
 h1{
-  margin-top: 20px;
-  font-family: 'Changa One', cursive;
-  text-align: center;
-  padding-top: 15px;
+  display: flex;
+  font-family: 'Lexend Deca', sans-serif;
+  justify-content: center;
+  margin: 20px;
+  gap: 4px;
 }
 .gallery{
-  color: rgb(90, 79, 184);
+  color: #63700e;
 }
 .subtitulo{
-  font-family: cursive;
-  font-size: 14px;
-  margin-top: 4px;
-  text-align: center;
+  color: #da4f56;
+  font-size: 16px;
+  margin-left: 170px;
+  font-family: 'Bree Serif', serif;
 }
 .galeria{
+  margin-left: 70px;
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: grid;
   gap: 8px;
   grid-template-areas: 
@@ -42,54 +44,56 @@ h1{
   "f6 f6 f6 f7 f7 f7 f8 f8 f8 f8 f8";
 }
 .foto{
+  top: 12px;
+  border-radius: 10px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   cursor: pointer;
   overflow: hidden;
-  
 }
 .foto:nth-child(1){
   grid-area: f1;
-  background-image: url(https://lh3.googleusercontent.com/yU4ckchjXTIb2_mtFEnjdiGyN2QVG8Fa0qN03o3kPWorhKyW5Q3rYlwDhlI54OkZS-ICb3x09YNijkcTVp1CLvvnmhHTdwYS2vlDbSag);
+  background-image: url(/photo-gallery/imagens/melanie.jpg);
 }
 .foto:nth-child(2){
   grid-area: f2;
-  background-image: url(https://lh3.googleusercontent.com/_O076zJEZWTySMylWvay83FHsPmOz33L5UNRC1_IeCe2nc-vHXqS73NIaoDfeh3hwMSpQHpnE_UUXdwp8BLm_PU-oEYlZgEUfN-EVsMp);
+  background-image: url(/photo-gallery/imagens/album.jpg);
   
 }
 .foto:nth-child(3){
   grid-area: f3;
-  background-image: url(https://lh3.googleusercontent.com/jfHCx13ZCQ1TxSAxh8T4tOg4Is34mFEA7-WCMXtHOnrlrdtPQmLY8de-4SY6i9WWxX7WdaFIqEqyJFRFzX7O6LEgt0dkdO1hXiloem4U);
+  background-image: url(/photo-gallery/imagens/melanie2.webp);
 }
 .foto:nth-child(4){
   grid-area: f4;
-  background-image: url(https://lh3.googleusercontent.com/helccgOBSJ447zBy6PdnpucDonht4GpeZb4H1zxk86JxaN6TkILyAjpXkIPFqyxWwLB8V6noJheDd2pnBqWmCxuawYYjVngp89Zc025Y);
-
+  background-image: url(/photo-gallery/imagens/melanie3.webp);
   
 }
 .foto:nth-child(5){
   grid-area: f5;
-  background-image: url(https://lh3.googleusercontent.com/o7fjUkGFEhfIbHpplwViqVkPmH14HywBy0WHsZH4iNVCCCDE_RLuCcS5nupMvYyKUhuMj_-IMrm9qeLSs5o_XDWGqkjxbVSEEeQkuHiA-w);
+  background-image: url(/photo-gallery/imagens/album2.jpg);
 }
 .foto:nth-child(6){
   grid-area: f6;
-  background-image: url(https://lh3.googleusercontent.com/G5VJlwdpAXuSewO5sXpgcvlho6pgXwobqlgrWPqWpKXeLGOrfGN155zIAsnWQgxvU_6X7Hq7JBS8RrdCGVmfMKUkfxNL2fl1ifC2waxl1w);
+  background-image: url(/photo-gallery/imagens/melanie5.jpg_large);
 }
 .foto:nth-child(7){
   grid-area: f7;
-  background-image: url(https://lh3.googleusercontent.com/bfN8lw6h609aAKquFSsC0z8_iz6-KMjkkKCSQCG3MNBJnPsVlAG6CHR1cKXX2g93aEMvqW5jxfXVeaVMHL4brVqrwToO8mIcsQnKp2tS);
+  background-image: url(/photo-gallery/imagens/melanie4.webp);
   
 }
 .foto:nth-child(8){
   grid-area: f8;
-  background-image: url(https://lh3.googleusercontent.com/d5-RsAKhLlTFjtmGwklvIlNs-cujiLgOwoiFFU6UuLah5Vws6x7en13v_ZvR54LEpBX8nD6u4qZffYTrMxopSpJL1jGXJ50c-Be7vvw);
+  background-image: url(/photo-gallery/imagens/melanie6.jpg);
 }
 .legenda{
+  font-size: 14px;
+  font-family: 'Bree Serif', serif;
   position: absolute;
   width: 100%;
-  height: 34px;
+  height: 40px;
   background-color: #0009;
   color: white;
   bottom: 0;
@@ -107,12 +111,15 @@ footer{
   margin-top: 40px;
 }
 .button{
+  font-family: 'Bree Serif', serif;
   border-radius: 10px;
   padding: 10px;
   color: white;
-  background-color: rgb(90, 79, 184);
+  background-color: #63700e;
 }
 .button:hover{
+  box-shadow: 1.5px 1.5px 20px rgb(230, 90, 113);
+  transition: 0.2s;
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -129,11 +136,14 @@ footer{
       height: 33vh;
   }
 }
-  .linha{
-    left: 620px;
-    top: 70px;
-    position: absolute;
-    background-color: black;
-    height: 3px;
-    width: 30px;
-  }
+.foto:hover{
+  box-shadow: 1.5px 1.5px 20px rgb(230, 90, 113);
+  cursor: zoom-in;
+}
+.legenda:hover{
+  cursor: pointer;
+}
+.selector {
+  background-image: url(/photo-gallery/imagens/album.jpg);
+  cursor: pointer;
+}
